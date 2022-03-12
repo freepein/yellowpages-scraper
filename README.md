@@ -2,7 +2,8 @@
 [![Python 3.6](https://img.shields.io/badge/Python-3.6-blue.svg)](https://www.python.org/download/releases/3.0/)
 
 ## Table of contents
-
+- [Usage](#usage)
+- [Installation](#installation)
 
 ## Usage
 [(Back to top)](#table-of-contents)
