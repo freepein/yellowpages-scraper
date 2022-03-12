@@ -1,0 +1,6 @@
+{
+
+	"proxies": "rotating proxies HERE!!!!!!!!!",
+	"file" : "numbers.txt",
+	"max_threads": 500
+}
