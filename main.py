@@ -7,7 +7,7 @@ from requests.exceptions import ProxyError, SSLError, Timeout
 import time
 import re
 import os
-
+from sys import platform
 
 with open("config.json", "r+", errors="ignore") as config_file:
     data = json.load(config_file)
@@ -70,8 +70,11 @@ def send_request(blob):
         print("[ERROR] Timeout/Ratelimit, Retrying!")
         return send_request(blob)
         
+if platform == "linux" or platform == "linux2":
+    os.system("clear")
+elif platform == "win32":
+    os.system("cls")
 
-os.system("cls")
 print("\x1b[1;32m***************************")
 print("\x1b[1;32m*        \x1b[1;31mstarting...     \x1b[1;32m *")
 print("\x1b[1;32m***************************\x1b[00m")
