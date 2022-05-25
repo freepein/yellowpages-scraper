@@ -85,7 +85,7 @@ for nummy in ddddd:
         if threading.active_count() <= data["max_threads"]:
             threading.Thread(target=send_request, args=(nummy,)).start()
             break
-        print("[THREAD] THREAD POOL FULL/DONE RESTART")
+        print("[THREAD] THREAD POOL FULL, RESTARTING")
         time.sleep(0.3)
 
 
